@@ -1,0 +1,116 @@
+/* ===== SEÇÃO PRINCIPAL DO JOGO ===== */
+.jogo {
+    background: linear-gradient(to right, #1b2838, #0f1c2c);
+    display: flex;
+    justify-content: center;
+    padding: 60px 10%;
+}
+
+/* CONTAINER */
+.jogo-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* TEXTO */
+.jogo-info {
+    flex: 2;
+}
+
+.jogo h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.jogo p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #c7d5e0;
+    line-height: 1.6;
+}
+
+/* BOTÃO */
+.cta {
+    background-color: #66c0f4;
+    color: #0f1c2c;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cta:hover {
+    background-color: #4fa3d1;
+}
+
+/* IMAGEM */
+.jogo-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.jogo-imagem img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* ===== GRID DE JOGOS ===== */
+.games {
+    padding: 60px 10%;
+    background-color: #0f1c2c;
+    text-align: center;
+}
+
+.games h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.game-card {
+    background: #1b2838;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* IMAGEM CARD */
+.game-img img {
+    width: 100%;
+    display: block;
+}
+
+/* TEXTO CARD */
+.game-card h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.game-card p {
+    color: #66c0f4;
+    margin: 0 10px 10px;
+    font-weight: bold;
+}
