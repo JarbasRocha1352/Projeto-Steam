@@ -1,0 +1,1472 @@
+[
+  {
+    "titulo": "Counter-Strike 2",
+    "descricao": "FPS competitivo focado em estratégia, precisão e trabalho em equipe.",
+    "appid": 730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 299.9,
+    "desconto": 35,
+    "qtd_downloads": 144000000
+  },
+  {
+    "titulo": "Dota 2",
+    "descricao": "MOBA estratégico com heróis variados e partidas em equipe.",
+    "appid": 570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg",
+    "genero": "MOBA",
+    "valor_mercado": 59.99,
+    "desconto": 10,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Team Fortress 2",
+    "descricao": "FPS multiplayer estilizado com classes e modos variados.",
+    "appid": 440,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 199.9,
+    "desconto": 67,
+    "qtd_downloads": 30000000
+  },
+  {
+    "titulo": "Left 4 Dead 2",
+    "descricao": "Cooperativo de ação e sobrevivência contra hordas de zumbis.",
+    "appid": 550,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 19.99,
+    "desconto": 0,
+    "qtd_downloads": 40000000
+  },
+  {
+    "titulo": "Portal 2",
+    "descricao": "Jogo de puzzle com portais, física e narrativa criativa.",
+    "appid": 620,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
+    "genero": "Puzzle",
+    "valor_mercado": 19.99,
+    "desconto": 60,
+    "qtd_downloads": 32000000
+  },
+  {
+    "titulo": "Half-Life 2",
+    "descricao": "FPS clássico com narrativa marcante e elementos de física.",
+    "appid": 220,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/220/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 9.99,
+    "desconto": 70,
+    "qtd_downloads": 14400000
+  },
+  {
+    "titulo": "Garry's Mod",
+    "descricao": "Sandbox de física para criar experiências e mods.",
+    "appid": 4000,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/4000/header.jpg",
+    "genero": "Sandbox",
+    "valor_mercado": 9.99,
+    "desconto": 50,
+    "qtd_downloads": 6000000
+  },
+  {
+    "titulo": "Terraria",
+    "descricao": "Sandbox 2D com exploração, construção e combate.",
+    "appid": 105600,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+    "genero": "Sandbox",
+    "valor_mercado": 199.9,
+    "desconto": 15,
+    "qtd_downloads": 60000000
+  },
+  {
+    "titulo": "The Binding of Isaac: Rebirth",
+    "descricao": "Roguelike de ação com salas aleatórias e muitos itens.",
+    "appid": 250900,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/250900/header.jpg",
+    "genero": "Roguelike",
+    "valor_mercado": 4.99,
+    "desconto": 0,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "PAYDAY 2",
+    "descricao": "Jogo cooperativo de assaltos com ação intensa.",
+    "appid": 218620,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/218620/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 14.99,
+    "desconto": 80,
+    "qtd_downloads": 350000
+  },
+  {
+    "titulo": "Euro Truck Simulator 2",
+    "descricao": "Simulador de caminhões com viagens e gerenciamento.",
+    "appid": 227300,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/227300/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 59.99,
+    "desconto": 20,
+    "qtd_downloads": 24000000
+  },
+  {
+    "titulo": "The Forest",
+    "descricao": "Sobrevivência em ilha misteriosa com terror e crafting.",
+    "appid": 242760,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/242760/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 59.99,
+    "desconto": 0,
+    "qtd_downloads": 350000
+  },
+  {
+    "titulo": "Rocket League",
+    "descricao": "Futebol com carros em partidas rápidas e competitivas.",
+    "appid": 252950,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/252950/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 0.0,
+    "desconto": 0,
+    "qtd_downloads": 120000000
+  },
+  {
+    "titulo": "Cities: Skylines",
+    "descricao": "Simulador de construção e gestão de cidades.",
+    "appid": 255710,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/255710/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 99.99,
+    "desconto": 0,
+    "qtd_downloads": 1440000
+  },
+  {
+    "titulo": "Subnautica",
+    "descricao": "Exploração e sobrevivência em um oceano alienígena.",
+    "appid": 264710,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 19.99,
+    "desconto": 0,
+    "qtd_downloads": 3500000
+  },
+  {
+    "titulo": "No Man's Sky",
+    "descricao": "Exploração espacial com planetas procedurais e crafting.",
+    "appid": 275850,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/275850/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 99.9,
+    "desconto": 15,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "INSIDE",
+    "descricao": "Plataforma com clima sombrio e puzzles visuais.",
+    "appid": 304430,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/304430/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 29.99,
+    "desconto": 80,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "Undertale",
+    "descricao": "RPG indie com humor, escolhas e combates únicos.",
+    "appid": 391540,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/391540/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 29.99,
+    "desconto": 70,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Stardew Valley",
+    "descricao": "Simulador de fazenda com vida social e exploração.",
+    "appid": 413150,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 99.5,
+    "desconto": 40,
+    "qtd_downloads": 24000000
+  },
+  {
+    "titulo": "Hollow Knight",
+    "descricao": "Metroidvania com exploração profunda e combate preciso.",
+    "appid": 367520,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "genero": "Metroidvania",
+    "valor_mercado": 199.9,
+    "desconto": 30,
+    "qtd_downloads": 6400000
+  },
+  {
+    "titulo": "Celeste",
+    "descricao": "Plataforma desafiadora com foco em movimento e superação.",
+    "appid": 504230,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 59.99,
+    "desconto": 50,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Cuphead",
+    "descricao": "Ação e plataforma com estilo de desenho clássico.",
+    "appid": 268910,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/268910/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 119.9,
+    "desconto": 67,
+    "qtd_downloads": 18000000
+  },
+  {
+    "titulo": "Dead Cells",
+    "descricao": "Roguelite de ação com combate rápido e progressão constante.",
+    "appid": 588650,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
+    "genero": "Roguelike",
+    "valor_mercado": 89.99,
+    "desconto": 50,
+    "qtd_downloads": 25000000
+  },
+  {
+    "titulo": "Among Us",
+    "descricao": "Jogo multiplayer de dedução social e sabotagem.",
+    "appid": 945360,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/945360/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 229.9,
+    "desconto": 0,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "Hades",
+    "descricao": "Roguelike de ação com narrativa dinâmica.",
+    "appid": 1145360,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "genero": "Roguelike",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Phasmophobia",
+    "descricao": "Terror cooperativo sobre investigação paranormal.",
+    "appid": 739630,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/739630/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 299.9,
+    "desconto": 0,
+    "qtd_downloads": 180000000
+  },
+  {
+    "titulo": "Valheim",
+    "descricao": "Sobrevivência viking com construção e exploração.",
+    "appid": 892970,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/892970/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 229.9,
+    "desconto": 50,
+    "qtd_downloads": 20000000
+  },
+  {
+    "titulo": "Apex Legends",
+    "descricao": "Battle royale com heróis e movimentação dinâmica.",
+    "appid": 1172470,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/header.jpg",
+    "genero": "Battle Royale",
+    "valor_mercado": 249.9,
+    "desconto": 0,
+    "qtd_downloads": 14400000
+  },
+  {
+    "titulo": "Elden Ring",
+    "descricao": "RPG de ação desafiador em mundo aberto.",
+    "appid": 1245620,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 249.9,
+    "desconto": 25,
+    "qtd_downloads": 80000000
+  },
+  {
+    "titulo": "Palworld",
+    "descricao": "Aventura com criaturas, crafting e exploração.",
+    "appid": 1623730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1623730/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 249.9,
+    "desconto": 30,
+    "qtd_downloads": 35000000
+  },
+  {
+    "titulo": "PUBG: BATTLEGROUNDS",
+    "descricao": "Battle royale focado em sobrevivência e tiro tático.",
+    "appid": 578080,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 199.9,
+    "desconto": 50,
+    "qtd_downloads": 144000000
+  },
+  {
+    "titulo": "ARK: Survival Evolved",
+    "descricao": "Sobrevivência em mundo com dinossauros.",
+    "appid": 346110,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/346110/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 249.9,
+    "desconto": 30,
+    "qtd_downloads": 50000000
+  },
+  {
+    "titulo": "Rust",
+    "descricao": "Sobrevivência multiplayer em ambiente hostil.",
+    "appid": 252490,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 0.0,
+    "desconto": 0,
+    "qtd_downloads": 120000000
+  },
+  {
+    "titulo": "Fallout 4",
+    "descricao": "RPG pós-apocalíptico com exploração e crafting.",
+    "appid": 377160,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/377160/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 99.99,
+    "desconto": 50,
+    "qtd_downloads": 3500000
+  },
+  {
+    "titulo": "The Elder Scrolls V: Skyrim Special Edition",
+    "descricao": "RPG de fantasia em mundo aberto com dragões e magia.",
+    "appid": 489830,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/489830/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 199.9,
+    "desconto": 67,
+    "qtd_downloads": 18000000
+  },
+  {
+    "titulo": "Monster Hunter: World",
+    "descricao": "Caça cooperativa a monstros gigantes.",
+    "appid": 582010,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/582010/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 89.99,
+    "desconto": 50,
+    "qtd_downloads": 25000000
+  },
+  {
+    "titulo": "Dead by Daylight",
+    "descricao": "Terror assimétrico entre assassino e sobreviventes.",
+    "appid": 381210,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/381210/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 29.99,
+    "desconto": 30,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Grand Theft Auto V",
+    "descricao": "Ação em mundo aberto com missões urbanas.",
+    "appid": 271590,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 199.9,
+    "desconto": 40,
+    "qtd_downloads": 50000000
+  },
+  {
+    "titulo": "Red Dead Redemption 2",
+    "descricao": "Aventura em mundo aberto no velho oeste.",
+    "appid": 1174180,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 59.99,
+    "desconto": 35,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "Cyberpunk 2077",
+    "descricao": "RPG futurista com ação, escolhas e exploração.",
+    "appid": 1091500,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 149.9,
+    "desconto": 35,
+    "qtd_downloads": 20000000
+  },
+  {
+    "titulo": "The Witcher 3: Wild Hunt",
+    "descricao": "RPG narrativo de fantasia em mundo aberto.",
+    "appid": 292030,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 199.9,
+    "desconto": 25,
+    "qtd_downloads": 20000000
+  },
+  {
+    "titulo": "The Sims 4",
+    "descricao": "Simulador de vida com criação e gerenciamento de personagens.",
+    "appid": 1222670,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1222670/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 199.9,
+    "desconto": 30,
+    "qtd_downloads": 60000000
+  },
+  {
+    "titulo": "Mortal Kombat 11",
+    "descricao": "Jogo de luta com combates intensos e personagens icônicos.",
+    "appid": 976310,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/976310/header.jpg",
+    "genero": "Luta",
+    "valor_mercado": 9.99,
+    "desconto": 85,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "Street Fighter V",
+    "descricao": "Jogo de luta competitivo com elenco variado.",
+    "appid": 310950,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/310950/header.jpg",
+    "genero": "Luta",
+    "valor_mercado": 14.99,
+    "desconto": 40,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "TEKKEN 7",
+    "descricao": "Jogo de luta 3D com combos e confrontos intensos.",
+    "appid": 389730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/389730/header.jpg",
+    "genero": "Luta",
+    "valor_mercado": 39.99,
+    "desconto": 20,
+    "qtd_downloads": 350000
+  },
+  {
+    "titulo": "DRAGON BALL FighterZ",
+    "descricao": "Luta em equipes com visual inspirado no anime.",
+    "appid": 678950,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/678950/header.jpg",
+    "genero": "Luta",
+    "valor_mercado": 14.99,
+    "desconto": 80,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "Brawlhalla",
+    "descricao": "Plataforma de luta multiplayer com vários personagens.",
+    "appid": 291550,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/291550/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 39.99,
+    "desconto": 80,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "Bloons TD 6",
+    "descricao": "Tower defense com estratégia e progressão constante.",
+    "appid": 960090,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/960090/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 14.99,
+    "desconto": 20,
+    "qtd_downloads": 120000
+  },
+  {
+    "titulo": "Slay the Spire",
+    "descricao": "Card game roguelike com construção de baralhos.",
+    "appid": 646570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/646570/header.jpg",
+    "genero": "Roguelike",
+    "valor_mercado": 9.99,
+    "desconto": 30,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Factorio",
+    "descricao": "Automação de fábricas e otimização de produção.",
+    "appid": 427520,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/427520/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 89.99,
+    "desconto": 85,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "RimWorld",
+    "descricao": "Simulador de colônia com eventos emergentes.",
+    "appid": 294100,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/294100/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 29.99,
+    "desconto": 0,
+    "qtd_downloads": 1440000
+  },
+  {
+    "titulo": "Prison Architect",
+    "descricao": "Gestão e construção de um presídio.",
+    "appid": 233450,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/233450/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 19.99,
+    "desconto": 0,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Oxygen Not Included",
+    "descricao": "Simulador de colônia espacial com gerenciamento de recursos.",
+    "appid": 457140,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/457140/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 19.99,
+    "desconto": 25,
+    "qtd_downloads": 9600000
+  },
+  {
+    "titulo": "Don't Starve Together",
+    "descricao": "Sobrevivência cooperativa com estilo sombrio.",
+    "appid": 322330,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/322330/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 19.99,
+    "desconto": 15,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Project Zomboid",
+    "descricao": "Sobrevivência zumbi com profundidade e realismo.",
+    "appid": 108600,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/108600/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 199.9,
+    "desconto": 10,
+    "qtd_downloads": 18000000
+  },
+  {
+    "titulo": "7 Days to Die",
+    "descricao": "Sobrevivência e crafting em mundo pós-apocalíptico.",
+    "appid": 251570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/251570/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 79.99,
+    "desconto": 60,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "DayZ",
+    "descricao": "Sobrevivência multiplayer em mundo infectado.",
+    "appid": 221100,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/221100/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 19.99,
+    "desconto": 15,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Raft",
+    "descricao": "Sobrevivência em alto-mar com construção de jangada.",
+    "appid": 648800,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/648800/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 39.99,
+    "desconto": 25,
+    "qtd_downloads": 3500000
+  },
+  {
+    "titulo": "Sea of Thieves",
+    "descricao": "Aventura pirata cooperativa em mundo compartilhado.",
+    "appid": 1172620,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1172620/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 119.9,
+    "desconto": 30,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Forza Horizon 5",
+    "descricao": "Corrida em mundo aberto com grande variedade de carros.",
+    "appid": 1551360,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg",
+    "genero": "Corrida",
+    "valor_mercado": 99.9,
+    "desconto": 40,
+    "qtd_downloads": 18000000
+  },
+  {
+    "titulo": "CarX Drift Racing Online",
+    "descricao": "Corrida focada em drift e customização.",
+    "appid": 635260,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/635260/header.jpg",
+    "genero": "Corrida",
+    "valor_mercado": 19.99,
+    "desconto": 70,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "Assetto Corsa",
+    "descricao": "Simulação de corrida com foco em realismo.",
+    "appid": 244210,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/244210/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 29.99,
+    "desconto": 67,
+    "qtd_downloads": 14400000
+  },
+  {
+    "titulo": "Assetto Corsa Competizione",
+    "descricao": "Simulador de GT racing com física refinada.",
+    "appid": 805550,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/805550/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 19.99,
+    "desconto": 15,
+    "qtd_downloads": 4200000
+  },
+  {
+    "titulo": "F1 23",
+    "descricao": "Simulador oficial de Fórmula 1 com carros e circuitos.",
+    "appid": 2108330,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2108330/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 19.99,
+    "desconto": 60,
+    "qtd_downloads": 960000
+  },
+  {
+    "titulo": "Need for Speed Heat",
+    "descricao": "Corrida arcade com perseguições e personalização.",
+    "appid": 1222680,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1222680/header.jpg",
+    "genero": "Corrida",
+    "valor_mercado": 4.99,
+    "desconto": 50,
+    "qtd_downloads": 120000
+  },
+  {
+    "titulo": "American Truck Simulator",
+    "descricao": "Simulador de caminhões com rotas pelos EUA.",
+    "appid": 270880,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/270880/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 9.99,
+    "desconto": 30,
+    "qtd_downloads": 6000000
+  },
+  {
+    "titulo": "Bus Simulator 21 Next Stop",
+    "descricao": "Simulador de ônibus com rotas urbanas.",
+    "appid": 976590,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/976590/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 39.99,
+    "desconto": 75,
+    "qtd_downloads": 600000
+  },
+  {
+    "titulo": "Farming Simulator 22",
+    "descricao": "Simulador agrícola com máquinas e produção rural.",
+    "appid": 1248130,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1248130/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 199.9,
+    "desconto": 20,
+    "qtd_downloads": 21600000
+  },
+  {
+    "titulo": "House Flipper",
+    "descricao": "Simulador de reforma e decoração de casas.",
+    "appid": 613100,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/613100/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 79.99,
+    "desconto": 40,
+    "qtd_downloads": 9600000
+  },
+  {
+    "titulo": "PC Building Simulator",
+    "descricao": "Simulador de montagem e manutenção de computadores.",
+    "appid": 621060,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/621060/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 149.9,
+    "desconto": 60,
+    "qtd_downloads": 600000
+  },
+  {
+    "titulo": "Football Manager 2024",
+    "descricao": "Simulador de gerenciamento de futebol.",
+    "appid": 2252570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2252570/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 19.99,
+    "desconto": 60,
+    "qtd_downloads": 21600000
+  },
+  {
+    "titulo": "eFootball PES 2021 SEASON UPDATE",
+    "descricao": "Simulador de futebol com foco em partidas e estratégia.",
+    "appid": 1259970,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1259970/header.jpg",
+    "genero": "Simulação",
+    "valor_mercado": 59.99,
+    "desconto": 20,
+    "qtd_downloads": 960000
+  },
+  {
+    "titulo": "NBA 2K24",
+    "descricao": "Jogo de basquete com modos competitivos e carreira.",
+    "appid": 2338770,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2338770/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 39.99,
+    "desconto": 60,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "WWE 2K24",
+    "descricao": "Luta livre com elenco e modos variados.",
+    "appid": 2315690,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2315690/header.jpg",
+    "genero": "Luta",
+    "valor_mercado": 4.99,
+    "desconto": 70,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Age of Empires II: Definitive Edition",
+    "descricao": "Estratégia em tempo real com civilizações históricas.",
+    "appid": 813780,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/813780/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 149.9,
+    "desconto": 25,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "Age of Empires IV",
+    "descricao": "RTS com campanhas históricas e partidas estratégicas.",
+    "appid": 1466860,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1466860/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 39.99,
+    "desconto": 20,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Sid Meier's Civilization VI",
+    "descricao": "Estratégia por turnos focada em expansão e diplomacia.",
+    "appid": 289070,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/289070/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 119.9,
+    "desconto": 50,
+    "qtd_downloads": 25000000
+  },
+  {
+    "titulo": "Hearts of Iron IV",
+    "descricao": "Grande estratégia ambientada na Segunda Guerra.",
+    "appid": 394360,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/394360/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 39.99,
+    "desconto": 40,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "Crusader Kings III",
+    "descricao": "Estratégia dinástica com política e intrigas.",
+    "appid": 1158310,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1158310/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 89.99,
+    "desconto": 40,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Europa Universalis IV",
+    "descricao": "Grande estratégia sobre impérios e expansão global.",
+    "appid": 236850,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/236850/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 89.99,
+    "desconto": 20,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Total War: WARHAMMER III",
+    "descricao": "Estratégia com batalhas épicas em universo fantástico.",
+    "appid": 1142710,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1142710/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 59.99,
+    "desconto": 50,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "XCOM 2",
+    "descricao": "Estratégia tática contra invasão alienígena.",
+    "appid": 268500,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/268500/header.jpg",
+    "genero": "Estratégia",
+    "valor_mercado": 14.99,
+    "desconto": 60,
+    "qtd_downloads": 80000
+  },
+  {
+    "titulo": "BattleBit Remastered",
+    "descricao": "FPS massivo com visual simples e combates caóticos.",
+    "appid": 671860,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/671860/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 19.99,
+    "desconto": 75,
+    "qtd_downloads": 4200000
+  },
+  {
+    "titulo": "Warframe",
+    "descricao": "Ação cooperativa futurista com ninjas espaciais.",
+    "appid": 230410,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/230410/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 229.9,
+    "desconto": 35,
+    "qtd_downloads": 50000000
+  },
+  {
+    "titulo": "Destiny 2",
+    "descricao": "FPS online com missões, looter shooter e cooperação.",
+    "appid": 1085660,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 229.9,
+    "desconto": 20,
+    "qtd_downloads": 216000000
+  },
+  {
+    "titulo": "Tom Clancy's Rainbow Six Siege",
+    "descricao": "FPS tático com operadores e destruição de cenários.",
+    "appid": 359550,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/359550/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 249.9,
+    "desconto": 40,
+    "qtd_downloads": 144000000
+  },
+  {
+    "titulo": "Battlefield 1",
+    "descricao": "FPS de guerra em escala ampla.",
+    "appid": 1238840,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1238840/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 79.99,
+    "desconto": 15,
+    "qtd_downloads": 14400000
+  },
+  {
+    "titulo": "Battlefield V",
+    "descricao": "FPS de guerra com combates em equipe.",
+    "appid": 1238810,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1238810/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 79.99,
+    "desconto": 25,
+    "qtd_downloads": 2400000
+  },
+  {
+    "titulo": "DOOM",
+    "descricao": "FPS acelerado com combate intenso contra demônios.",
+    "appid": 379720,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/379720/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 19.99,
+    "desconto": 40,
+    "qtd_downloads": 2400000
+  },
+  {
+    "titulo": "DOOM Eternal",
+    "descricao": "Ação frenética com mobilidade e combate brutal.",
+    "appid": 782330,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/782330/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 89.99,
+    "desconto": 20,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Halo: The Master Chief Collection",
+    "descricao": "Coletânea de FPS clássicos da série Halo.",
+    "appid": 976730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 39.99,
+    "desconto": 25,
+    "qtd_downloads": 600000
+  },
+  {
+    "titulo": "Titanfall 2",
+    "descricao": "FPS com parkour, mechas e campanha marcante.",
+    "appid": 1237970,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1237970/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 19.99,
+    "desconto": 60,
+    "qtd_downloads": 2400000
+  },
+  {
+    "titulo": "BioShock Infinite",
+    "descricao": "FPS narrativo com ambientação única.",
+    "appid": 8870,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/8870/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 19.99,
+    "desconto": 75,
+    "qtd_downloads": 6000000
+  },
+  {
+    "titulo": "Far Cry 5",
+    "descricao": "FPS em mundo aberto com missões e exploração.",
+    "appid": 552520,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/552520/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 99.99,
+    "desconto": 20,
+    "qtd_downloads": 960000
+  },
+  {
+    "titulo": "Borderlands 2",
+    "descricao": "Looter shooter cooperativo com humor e ação.",
+    "appid": 49520,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/49520/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 79.99,
+    "desconto": 15,
+    "qtd_downloads": 9600000
+  },
+  {
+    "titulo": "Borderlands 3",
+    "descricao": "Looter shooter com muitas armas e cooperação.",
+    "appid": 397540,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/397540/header.jpg",
+    "genero": "FPS",
+    "valor_mercado": 99.99,
+    "desconto": 0,
+    "qtd_downloads": 14400000
+  },
+  {
+    "titulo": "Resident Evil 2",
+    "descricao": "Survival horror com ação e atmosfera tensa.",
+    "appid": 883710,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/883710/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 89.99,
+    "desconto": 10,
+    "qtd_downloads": 18000000
+  },
+  {
+    "titulo": "Resident Evil 4",
+    "descricao": "Ação e terror com campanha intensa.",
+    "appid": 2050650,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 99.9,
+    "desconto": 40,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Resident Evil Village",
+    "descricao": "Terror e ação em ambiente sombrio.",
+    "appid": 1196590,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1196590/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 29.99,
+    "desconto": 30,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "Outlast",
+    "descricao": "Terror em primeira pessoa com fuga e suspense.",
+    "appid": 238320,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/238320/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 89.99,
+    "desconto": 30,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "Amnesia: The Dark Descent",
+    "descricao": "Terror psicológico com exploração e mistério.",
+    "appid": 57300,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/57300/header.jpg",
+    "genero": "Terror",
+    "valor_mercado": 29.99,
+    "desconto": 80,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Little Nightmares",
+    "descricao": "Aventura sombria com puzzles e atmosfera opressiva.",
+    "appid": 424840,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/424840/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 39.99,
+    "desconto": 75,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Little Nightmares II",
+    "descricao": "Aventura de suspense com criaturas assustadoras.",
+    "appid": 860510,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/860510/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 4.99,
+    "desconto": 60,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Ori and the Blind Forest: Definitive Edition",
+    "descricao": "Plataforma metroidvania com visual encantador.",
+    "appid": 387290,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/387290/header.jpg",
+    "genero": "Metroidvania",
+    "valor_mercado": 14.99,
+    "desconto": 75,
+    "qtd_downloads": 64000
+  },
+  {
+    "titulo": "Ori and the Will of the Wisps",
+    "descricao": "Aventura e plataforma com combate e exploração.",
+    "appid": 1057090,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1057090/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 19.99,
+    "desconto": 85,
+    "qtd_downloads": 350000
+  },
+  {
+    "titulo": "Limbo",
+    "descricao": "Plataforma em preto e branco com puzzles e clima sombrio.",
+    "appid": 48000,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/48000/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 9.99,
+    "desconto": 30,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Unravel Two",
+    "descricao": "Puzzle cooperativo com personagens feitos de fio.",
+    "appid": 1225570,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1225570/header.jpg",
+    "genero": "Puzzle",
+    "valor_mercado": 39.99,
+    "desconto": 60,
+    "qtd_downloads": 96000
+  },
+  {
+    "titulo": "Human: Fall Flat",
+    "descricao": "Puzzle e física com humor e cooperação.",
+    "appid": 477160,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/477160/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 4.99,
+    "desconto": 30,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "It Takes Two",
+    "descricao": "Aventura cooperativa com mecânicas criativas.",
+    "appid": 1426210,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1426210/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 4.99,
+    "desconto": 30,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "A Way Out",
+    "descricao": "Aventura cooperativa focada em fuga e narrativa.",
+    "appid": 1222700,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1222700/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 89.99,
+    "desconto": 30,
+    "qtd_downloads": 120000
+  },
+  {
+    "titulo": "Overcooked! 2",
+    "descricao": "Cooperativo caótico de cozinha e organização.",
+    "appid": 728880,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/728880/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 59.99,
+    "desconto": 20,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Moving Out",
+    "descricao": "Cooperativo de mudanças com física divertida.",
+    "appid": 996770,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/996770/header.jpg",
+    "genero": "Coop",
+    "valor_mercado": 9.99,
+    "desconto": 80,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Castle Crashers",
+    "descricao": "Beat 'em up cooperativo com estilo cartunesco.",
+    "appid": 204360,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/204360/header.jpg",
+    "genero": "Coop",
+    "valor_mercado": 89.99,
+    "desconto": 70,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Broforce",
+    "descricao": "Ação explosiva em plataforma com humor e destruição.",
+    "appid": 274190,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/274190/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 4.99,
+    "desconto": 60,
+    "qtd_downloads": 120000
+  },
+  {
+    "titulo": "Shovel Knight: Treasure Trove",
+    "descricao": "Plataforma 2D com visual retrô e ação.",
+    "appid": 250760,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/250760/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 4.99,
+    "desconto": 70,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "Mega Man 11",
+    "descricao": "Plataforma clássica com robôs e fases desafiadoras.",
+    "appid": 742300,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/742300/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 9.99,
+    "desconto": 70,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Sonic Mania",
+    "descricao": "Plataforma retrô inspirado nos jogos clássicos do Sonic.",
+    "appid": 584400,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/584400/header.jpg",
+    "genero": "Plataforma",
+    "valor_mercado": 39.99,
+    "desconto": 50,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Sonic Frontiers",
+    "descricao": "Ação e exploração em ambientes abertos.",
+    "appid": 1237320,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1237320/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "DRAGON BALL Z: KAKAROT",
+    "descricao": "RPG de ação que revisita a saga Dragon Ball Z.",
+    "appid": 851850,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/851850/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Persona 5 Royal",
+    "descricao": "RPG japonês com vida escolar e combates por turno.",
+    "appid": 1687950,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1687950/header.jpg",
+    "genero": "JRPG",
+    "valor_mercado": 4.99,
+    "desconto": 20,
+    "qtd_downloads": 640000
+  },
+  {
+    "titulo": "Persona 4 Golden",
+    "descricao": "RPG japonês com investigação e vínculos sociais.",
+    "appid": 1113000,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1113000/header.jpg",
+    "genero": "JRPG",
+    "valor_mercado": 9.99,
+    "desconto": 60,
+    "qtd_downloads": 400000
+  },
+  {
+    "titulo": "FINAL FANTASY VII REMAKE INTERGRADE",
+    "descricao": "RPG de ação com reimaginação de clássico.",
+    "appid": 1462040,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "FINAL FANTASY XV WINDOWS EDITION",
+    "descricao": "RPG de ação com viagem, combate e fantasia.",
+    "appid": 637650,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/637650/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 9.99,
+    "desconto": 50,
+    "qtd_downloads": 5000000
+  },
+  {
+    "titulo": "NieR:Automata",
+    "descricao": "Ação e RPG com temática filosófica e combates velozes.",
+    "appid": 524220,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Dark Souls III",
+    "descricao": "RPG de ação desafiador com combate metódico.",
+    "appid": 374320,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 79.99,
+    "desconto": 15,
+    "qtd_downloads": 3500000
+  },
+  {
+    "titulo": "Sekiro: Shadows Die Twice",
+    "descricao": "Ação intensa com espadas, furtividade e precisão.",
+    "appid": 814380,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 89.99,
+    "desconto": 0,
+    "qtd_downloads": 200000
+  },
+  {
+    "titulo": "Lies of P",
+    "descricao": "RPG de ação sombrio inspirado em contos clássicos.",
+    "appid": 1627720,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1627720/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 29.99,
+    "desconto": 50,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Black Desert",
+    "descricao": "MMORPG com combates rápidos e mundo expansivo.",
+    "appid": 582660,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/582660/header.jpg",
+    "genero": "MMORPG",
+    "valor_mercado": 39.99,
+    "desconto": 15,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "New World",
+    "descricao": "MMORPG com exploração, crafting e batalhas.",
+    "appid": 1063730,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1063730/header.jpg",
+    "genero": "MMORPG",
+    "valor_mercado": 39.99,
+    "desconto": 60,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "The Elder Scrolls Online",
+    "descricao": "MMORPG ambientado no universo Elder Scrolls.",
+    "appid": 306130,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/306130/header.jpg",
+    "genero": "MMORPG",
+    "valor_mercado": 39.99,
+    "desconto": 15,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Guild Wars 2",
+    "descricao": "MMORPG com exploração, eventos e combates em grupo.",
+    "appid": 1284210,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1284210/header.jpg",
+    "genero": "MMORPG",
+    "valor_mercado": 39.99,
+    "desconto": 25,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Path of Exile",
+    "descricao": "ARPG gratuito com sistema profundo de builds.",
+    "appid": 238960,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/238960/header.jpg",
+    "genero": "ARPG",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 500000
+  },
+  {
+    "titulo": "Diablo IV",
+    "descricao": "ARPG sombrio com loot e combate contra hordas.",
+    "appid": 2344520,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2344520/header.jpg",
+    "genero": "ARPG",
+    "valor_mercado": 89.99,
+    "desconto": 30,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Torchlight II",
+    "descricao": "ARPG com exploração de dungeons e itens.",
+    "appid": 200710,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/200710/header.jpg",
+    "genero": "ARPG",
+    "valor_mercado": 39.99,
+    "desconto": 75,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Baldur's Gate 3",
+    "descricao": "RPG tático narrativo com escolhas e combate por turnos.",
+    "appid": 1086940,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 20,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "Divinity: Original Sin 2",
+    "descricao": "RPG tático com grande liberdade de escolha.",
+    "appid": 435150,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/435150/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 29.99,
+    "desconto": 70,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "Disco Elysium",
+    "descricao": "RPG narrativo focado em diálogos e investigação.",
+    "appid": 632470,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 30,
+    "qtd_downloads": 12000000
+  },
+  {
+    "titulo": "Mass Effect Legendary Edition",
+    "descricao": "Coletânea de RPG sci-fi com narrativa marcante.",
+    "appid": 1328670,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1328670/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 59.99,
+    "desconto": 70,
+    "qtd_downloads": 1200000
+  },
+  {
+    "titulo": "Dragon Age: Inquisition",
+    "descricao": "RPG de fantasia com grupo e decisões narrativas.",
+    "appid": 1222690,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1222690/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 9.99,
+    "desconto": 30,
+    "qtd_downloads": 3500000
+  },
+  {
+    "titulo": "Kingdom Come: Deliverance",
+    "descricao": "RPG medieval com foco em realismo histórico.",
+    "appid": 379430,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/379430/header.jpg",
+    "genero": "RPG",
+    "valor_mercado": 99.99,
+    "desconto": 70,
+    "qtd_downloads": 8000000
+  },
+  {
+    "titulo": "Middle-earth: Shadow of War",
+    "descricao": "Ação em mundo aberto no universo de fantasia.",
+    "appid": 356190,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/356190/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 14.99,
+    "desconto": 85,
+    "qtd_downloads": 350000
+  },
+  {
+    "titulo": "Batman: Arkham Knight",
+    "descricao": "Ação e aventura com combate e exploração em Gotham.",
+    "appid": 208650,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/208650/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 19.99,
+    "desconto": 75,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Marvel's Spider-Man Remastered",
+    "descricao": "Ação em mundo aberto com mobilidade e combate heroico.",
+    "appid": 1817070,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1817070/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 29.99,
+    "desconto": 50,
+    "qtd_downloads": 120000
+  },
+  {
+    "titulo": "Marvel's Spider-Man: Miles Morales",
+    "descricao": "Ação urbana com combate e habilidades especiais.",
+    "appid": 1817190,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1817190/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 14.99,
+    "desconto": 70,
+    "qtd_downloads": 800000
+  },
+  {
+    "titulo": "God of War",
+    "descricao": "Ação e aventura com narrativa mitológica.",
+    "appid": 1593500,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
+    "genero": "Aventura",
+    "valor_mercado": 19.99,
+    "desconto": 25,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Days Gone",
+    "descricao": "Ação em mundo aberto com hordas e sobrevivência.",
+    "appid": 1259420,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/1259420/header.jpg",
+    "genero": "Sobrevivência",
+    "valor_mercado": 59.99,
+    "desconto": 70,
+    "qtd_downloads": 2000000
+  },
+  {
+    "titulo": "Ghost of Tsushima DIRECTOR'S CUT",
+    "descricao": "Ação samurai em mundo aberto com combate elegante.",
+    "appid": 2215430,
+    "url_imagem": "https://cdn.akamai.steamstatic.com/steam/apps/2215430/header.jpg",
+    "genero": "Ação",
+    "valor_mercado": 59.99,
+    "desconto": 25,
+    "qtd_downloads": 5000000
+  }
+]

@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1b2835;
+    color: #c7d5e0;
+}
+
+#root {
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #171a15;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #66c0f4;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #c7d5e0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #66c0f4;
+}
+
+.btn-nav {
+    background-color: #5c7e10;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(to right, #1b2838, #0f1c2c);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background-color: #66c0f4;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #1b2838;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background-color: #417a9b;
+}
+
+/* GAMES */
+
+.games {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.games h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #2a475e;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card h3 {
+    font-size: 14px;
+    margin: 8px 0 5px;
+    color: #fff;
+}
+
+.game-card p {
+    font-size: 13px;
+    color: #66c0f4;
+}
+
+.game-img {
+    background-color: #1b2838;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.game-img img {
+    width: 100%;
+    display: block;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 60px 10%;
+    background-color: #171a21;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+form input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #5c7e10;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7aa32d;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f1c2c;
+    font-size: 14px;
+}
