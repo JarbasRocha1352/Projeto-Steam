@@ -1,112 +1,94 @@
 import { criaSecaoJogos, criaJogo } from '../Jogos/jogos.js';
-
 const rotas = {
-    "/": {
-        renderizar: function () {
-            const root = document.createElement('root');
-            root.style.padding = '60px 10%';
+    "/": () => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
 
-            const h1 = document.createElement('h1');
-            h1.textContent = 'Bem-vindo à Steam';
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Bem-vindo à Steam';
 
-            const p = document.createElement('p');
-            p.textContent = "A Steam é a plataforma de jogos mais popular do mundo, oferecendo uma vasta biblioteca de jogos para PC, Mac e Linux.";
+        const p = document.createElement('p');
+        p.textContent = "A Steam é a plataforma de jogos mais popular do mundo, oferecendo uma vasta biblioteca de jogos para PC, Mac e Linux.";
 
-            const hero = criaHero();
-            
-            root.appendChild(h1);
-            root.appendChild(p);
-            root.appendChild(hero);
+        const hero = criaHero();
 
-            return root;
-        }
+        root.appendChild(h1);
+        root.appendChild(p);
+        root.appendChild(hero);
+
+        return root;
     },
-    "/Loja": {
-        renderizar: function () {
-            const root = document.createElement('root');
-            root.style.padding = '60px 10%';
+    "/Loja": () => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
 
-            const h1 = document.createElement('h1');
-            h1.textContent = 'Loja';
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Loja';
 
-            const p = document.createElement('p');
-            p.textContent = 'Bem-vindo à nossa loja! Aqui você encontrará uma variedade de produtos incríveis para atender às suas necessidades. Explore nossas categorias e descubra ofertas exclusivas. Aproveite suas compras!';
+        const p = document.createElement('p');
+        p.textContent = 'Bem-vindo à nossa loja! Aqui você encontrará uma variedade de produtos incríveis para atender às suas necessidades. Explore nossas categorias e descubra ofertas exclusivas. Aproveite suas compras!';
 
-            root.appendChild(h1);
-            root.appendChild(p);
+        root.appendChild(h1);
+        root.appendChild(p);
 
-            return root;
-        }
+        return root;
     },
-    "/Comunidade": {
-        renderizar: function () {
-            const root = document.createElement('root');
-            const contato = criaContato();
-            root.appendChild(contato);
+    "/Comunidade": () => {
+        const root = document.createElement('div');
+        const contato = criaContato();
+        root.appendChild(contato);
 
-            return root;
-        }
+        return root;
     },
-    "/Jogos": {
-        renderizar: function () {
-            const root = document.createElement('root');
 
-            const secaojogos = criaSecaoJogos();
-            const jogos = criaJogo();
-            const footer = criaFooter();
+    "/Jogos": (id) => {
+        const root = document.createElement('div');
 
-            root.appendChild(secaojogos);
-            root.appendChild(jogos);
-            root.appendChild(footer);
-
-            return root;
+        if (id) {
+            root.appendChild(criaJogo(id));
+        } else {
+            root.appendChild(criaSecaoJogos());
+            root.appendChild(criaFooter());
         }
+
+        return root;
     },
-    "/Sobre": {
-        renderizar: function () {
-            const root = document.createElement('root');
-            root.style.padding = '60px 10%';
 
-            const h1 = document.createElement('h1');
-            h1.textContent = 'Sobre Nós';
-
-            const p = document.createElement('p');
-            p.textContent = 'Somos uma empresa dedicada a fornecer os melhores produtos e serviços para nossos clientes. Com anos de experiência no mercado, estamos comprometidos em oferecer qualidade e satisfação. Nossa equipe está sempre pronta para ajudar e garantir que sua experiência conosco seja excepcional.';
-
-            root.appendChild(h1);
-            root.appendChild(p);
-
-            return root;
-        }
+    "/Sobre": () => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
+        root.innerHTML = `
+        <h1>Sobre Nós</h1>
+        <p>
+            Somos uma empresa dedicada a fornecer os melhores produtos e serviços para nossos clientes.
+            Com anos de experiência no mercado, estamos comprometidos em oferecer qualidade e satisfação.
+            Nossa equipe está sempre pronta para ajudar e garantir que sua experiência conosco seja excepcional.
+        </p>
+    `;
+        return root;
     },
-    "/Steam": {
-        renderizar: function () {
-            const root = document.createElement('root');
-            root.style.padding = '60px 10%';
+    "/Steam": () => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
 
-            const h1 = document.createElement('h1');
-            h1.textContent = 'Instalar Steam';
+        const h1 = document.createElement('h1');
+        h1.textContent = 'Instalar Steam';
 
-            const p = document.createElement('p');
-            p.textContent = 'Para instalar o Steam, siga os passos abaixo:';
+        const p = document.createElement('p');
+        p.textContent = 'Para instalar o Steam, siga os passos abaixo:';
 
-            const b = document.createElement('p');
-            b.textContent = 'COLOQUEI MESMO FDS KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK';
+        const a = document.createElement('a');
+        a.textContent = 'Bem-vindo(a) ao Steam';
+        a.setAttribute('href', 'https://store.steampowered.com/about/');
+        a.setAttribute('target', '_blank');
 
-            const a = document.createElement('a');
-            a.textContent = 'Bem-vindo(a) ao Steam';
-            a.setAttribute('href', 'https://store.steampowered.com/about/');
-            a.setAttribute('target', '_blank');
+        root.appendChild(h1);
+        root.appendChild(p);
+        root.appendChild(a);
 
-            root.appendChild(h1);
-            root.appendChild(p);
-            root.appendChild(a);
-            root.appendChild(b);
-
-            return root;
-        }
-    }
-}
+        return root;
+    },
+};
 
 const criaHeader = () => {
     const header = document.createElement('header');
@@ -190,7 +172,7 @@ const criaContato = () => {
 const criaFooter = () => {
     const footer = document.createElement('footer');
     const p = document.createElement('p');
-    p.textContent = "milton vulgo bonilton";
+    p.textContent = "@2026 Steam. Todos os direitos reservados.";
     footer.appendChild(p);
     return footer;
 }
@@ -201,27 +183,29 @@ const main = () => {
     linkcss.setAttribute('href', './Componentes/App/app.css');
     document.head.appendChild(linkcss);
 
+    // Adiciona o header no div#header (separado do conteúdo)
+    const headerEl = document.getElementById('header');
+    headerEl.appendChild(criaHeader());
+
     renderizandoRotas(window.location.pathname);
 }
 
 main();
 
 function renderizandoRotas(path) {
+    let partes = path.split("/");
+    const novoPath = "/" + partes[1];
+    const id = partes[2] || null;
+    const pagina = rotas[novoPath];
+
     const root = document.getElementById('root');
 
-    // se o caminho não existir nas rotas (ex: /index.html do Live Server), vai para "/"
-    if (!rotas[path]) {
-        navegarPara('/');
-        return;
+    if (pagina) {
+        root.innerHTML = '';
+        root.appendChild(pagina(id));      // passa o id para a rota
+    } else {
+        root.innerHTML = `<h1>404</h1><p>Página não encontrada.</p>`;
     }
-
-    root.innerHTML = '';
-
-    const header = criaHeader();
-    root.appendChild(header);
-
-    const conteudo = rotas[path].renderizar();
-    root.appendChild(conteudo);
 }
 
 document.addEventListener("click", function (event) {
