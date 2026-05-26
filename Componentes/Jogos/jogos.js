@@ -1,62 +1,76 @@
-import dados from './jogos.json' with { type: 'json' };
+let dados = [];
 
-const criaCard = (nome, descricao, url, genero, preco, downloads, appid) => {
+export const setDados = (d) => { dados = d; }
+
+const criaCard = (jogo) => {
     const card = document.createElement("div");
     card.classList.add("game-card");
     card.style.cursor = "pointer";
 
     card.addEventListener("click", () => {
-        history.pushState({}, "", `/Jogos/${appid}`);
+        history.pushState({}, "", `/Jogos/${jogo.appid}`);
         window.dispatchEvent(new PopStateEvent("popstate"));
     });
 
     const imagem = document.createElement("div");
     imagem.classList.add("game-img");
     const img = document.createElement("img");
-    img.setAttribute("src", url);
-    img.setAttribute("width", "200px");
+    img.setAttribute("src", jogo.url_imagem);
+    img.setAttribute("alt", jogo.titulo);
     imagem.appendChild(img);
 
+    const body = document.createElement("div");
+    body.classList.add("game-card-body");
+
     const titulo = document.createElement("h3");
-    titulo.textContent = nome;
+    titulo.textContent = jogo.titulo;
 
-    const descontoJogo = document.createElement("p");
-    descontoJogo.textContent = descricao;
+    const genero = document.createElement("p");
+    genero.classList.add("game-card-genero");
+    genero.textContent = jogo.genero;
 
-    const generoJogos = document.createElement("p");
-    generoJogos.textContent = genero;
+    const precoWrap = document.createElement("div");
+    precoWrap.classList.add("game-card-preco-wrap");
 
-    const valorJogo = document.createElement("p");
-    valorJogo.textContent = `R$${preco.toFixed(2)}`;
+    if (jogo.desconto > 0) {
+        const desconto = document.createElement("span");
+        desconto.classList.add("loja-desconto");
+        desconto.textContent = `-${jogo.desconto}%`;
+        precoWrap.appendChild(desconto);
+    }
 
-    const downloadsJogo = document.createElement("p");
-    downloadsJogo.textContent = `Downloads: ${downloads}`;
+    const preco = document.createElement("span");
+    preco.classList.add("game-card-preco");
+    if (jogo.valor_mercado === 0) {
+        preco.textContent = "Gratuito";
+        preco.classList.add("gratuito");
+    } else {
+        preco.textContent = `R$${jogo.valor_mercado.toFixed(2)}`;
+    }
+    precoWrap.appendChild(preco);
+
+    body.appendChild(titulo);
+    body.appendChild(genero);
+    body.appendChild(precoWrap);
 
     card.appendChild(imagem);
-    card.appendChild(titulo);
-    card.appendChild(descontoJogo);
-    card.appendChild(generoJogos);
-    card.appendChild(valorJogo);
-    card.appendChild(downloadsJogo);
+    card.appendChild(body);
 
     return card;
 }
 
 export const CriaCardAleatorio = (vetorJogos) => {
     const aleatorio = Math.floor(Math.random() * vetorJogos.length);
-    const jogo = vetorJogos[aleatorio];
-    return criaCard(
-        jogo.titulo, jogo.descricao, jogo.url_imagem,
-        jogo.genero, jogo.valor_mercado, jogo.qtd_downloads,
-        jogo.appid  // ← sem isso o clique não funciona
-    );
+    return criaCard(vetorJogos[aleatorio]);
 }
 
 export const criaSecaoJogos = () => {
     const secao = document.createElement('section');
     secao.classList.add('games');
+
     const h2 = document.createElement('h2');
     h2.textContent = "Jogos em Destaque";
+
     const div = document.createElement('div');
     div.classList.add('game-grid');
     div.setAttribute("id", "cardsGrid");
@@ -85,6 +99,7 @@ export const criaJogo = (appid) => {
         erro.textContent = "Jogo não encontrado.";
         return erro;
     }
+
     const section = document.createElement('section');
     section.classList.add('jogo');
 
@@ -98,20 +113,20 @@ export const criaJogo = (appid) => {
     jogoImagem.classList.add('jogo-imagem');
 
     const h1 = document.createElement('h1');
-    h1.textContent = jogo.titulo;  // ← nome real do jogo
+    h1.textContent = jogo.titulo;
 
     const p = document.createElement('p');
-    p.textContent = jogo.descricao;  // ← descrição real
+    p.textContent = jogo.descricao;
 
     const preco = document.createElement('p');
-    preco.textContent = `R$${jogo.valor_mercado.toFixed(2)}`;
+    preco.textContent = jogo.valor_mercado === 0 ? 'Gratuito' : `R$${jogo.valor_mercado.toFixed(2)}`;
 
     const button = document.createElement('button');
     button.classList.add('cta');
-    button.textContent = `Comprar ${jogo.titulo}`;  // ← nome real
+    button.textContent = `Comprar ${jogo.titulo}`;
 
     const img = document.createElement('img');
-    img.setAttribute('src', jogo.url_imagem);  // ← imagem real
+    img.setAttribute('src', jogo.url_imagem);
     img.setAttribute('alt', jogo.titulo);
 
     jogoImagem.appendChild(img);

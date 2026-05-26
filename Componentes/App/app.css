@@ -6,25 +6,25 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #1b2835;
     color: #c7d5e0;
 }
 
 #root {
-        display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+/* HEADER PRINCIPAL */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #171a15;
+    background-color: #171a21;
 }
 
 .logo {
@@ -48,7 +48,12 @@ nav a:hover {
     background-color: #5c7e10;
     padding: 8px 15px;
     border-radius: 4px;
-    color: white;
+    color: white !important;
+}
+
+.btn-nav:hover {
+    background-color: #7aa32d !important;
+    color: white !important;
 }
 
 /* HERO */
@@ -90,7 +95,7 @@ nav a:hover {
     background-color: #417a9b;
 }
 
-/* GAMES */
+/* GAMES (página /Jogos) */
 
 .games {
     padding: 60px 10%;
@@ -104,45 +109,227 @@ nav a:hover {
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .game-card {
-    background-color: #2a475e;
-    padding: 15px;
+    background-color: #1b2838;
     border-radius: 8px;
-    transition: 0.3s;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .game-card:hover {
-    transform: scale(1.05);
-}
-
-.game-card h3 {
-    font-size: 14px;
-    margin: 8px 0 5px;
-    color: #fff;
-}
-
-.game-card p {
-    font-size: 13px;
-    color: #66c0f4;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
 .game-img {
-    background-color: #1b2838;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    width: 100%;
     overflow: hidden;
 }
 
 .game-img img {
     width: 100%;
     display: block;
+    transition: transform 0.3s;
 }
 
-/* CONTACT */
+.game-card:hover .game-img img {
+    transform: scale(1.04);
+}
+
+.game-card h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 12px 4px;
+    margin: 0;
+}
+
+.game-card p {
+    font-size: 12px;
+    color: #8f98a0;
+    padding: 2px 12px;
+    margin: 0;
+}
+
+.game-card p:nth-child(3) {
+    color: #66c0f4;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.game-card p:nth-last-child(2) {
+    color: #acdbf5;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 6px;
+}
+
+.game-card p:last-child {
+    color: #8f98a0;
+    font-size: 11px;
+    padding-bottom: 12px;
+}
+
+/* SUBNAV LOJA */
+
+.loja-subnav {
+    background-color: #c6d4df;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.loja-subnav-btn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #1b2838;
+    padding: 9px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.loja-subnav-btn:hover {
+    background-color: #a8b8c4;
+}
+
+.loja-search {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.loja-search input {
+    background: #b8c9d6;
+    border: none;
+    outline: none;
+    padding: 7px 14px;
+    font-size: 13px;
+    color: #1b2838;
+    width: 220px;
+    border-radius: 3px;
+}
+
+.loja-search input::placeholder {
+    color: #5a7a8a;
+    font-style: italic;
+}
+
+/* CONTEÚDO LOJA */
+
+.loja-conteudo {
+    padding: 40px 10%;
+}
+
+.loja-titulo {
+    font-size: 22px;
+    color: #c7d5e0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-left: 4px solid #66c0f4;
+    padding-left: 12px;
+}
+
+.loja-categoria {
+    margin-bottom: 50px;
+}
+
+.loja-desconto {
+    background-color: #4c6b22;
+    color: #a4d007;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 3px;
+    display: inline-block;
+    width: fit-content;
+    margin: 4px 12px;
+}
+
+/* CARDS DA LOJA */
+
+.game-card-body {
+    padding: 10px 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.game-card-genero {
+    font-size: 11px;
+    color: #8f98a0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.game-card-preco-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.game-card-preco {
+    font-size: 13px;
+    font-weight: bold;
+    color: #acdbf5;
+}
+
+.game-card-preco.gratuito {
+    color: #4fc3f7;
+}
+
+/* CATEGORIAS */
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.categoria-card {
+    background-color: #2a475e;
+    border-radius: 8px;
+    padding: 20px 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.categoria-card:hover {
+    background-color: #3d6b8c;
+    transform: scale(1.04);
+}
+
+.categoria-nome {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.categoria-qtd {
+    font-size: 12px;
+    color: #66c0f4;
+}
+
+/* CONTATO */
 
 .contact {
     padding: 60px 10%;

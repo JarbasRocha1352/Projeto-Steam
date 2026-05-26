@@ -1,4 +1,7 @@
-import { criaSecaoJogos, criaJogo } from '../Jogos/jogos.js';
+import { criaSecaoJogos, criaJogo, setDados } from '../Jogos/jogos.js';
+
+let dadosLoja = [];
+
 const rotas = {
     "/": () => {
         const root = document.createElement('div');
@@ -20,17 +23,7 @@ const rotas = {
     },
     "/Loja": () => {
         const root = document.createElement('div');
-        root.style.padding = '60px 10%';
-
-        const h1 = document.createElement('h1');
-        h1.textContent = 'Loja';
-
-        const p = document.createElement('p');
-        p.textContent = 'Bem-vindo à nossa loja! Aqui você encontrará uma variedade de produtos incríveis para atender às suas necessidades. Explore nossas categorias e descubra ofertas exclusivas. Aproveite suas compras!';
-
-        root.appendChild(h1);
-        root.appendChild(p);
-
+        root.appendChild(CriarHeaderJogos());
         return root;
     },
     "/Comunidade": () => {
@@ -89,6 +82,231 @@ const rotas = {
         return root;
     },
 };
+// FUNÇÕES PARA CRIAR PAGINA LOJA
+
+const CriarHeaderJogos = () => {
+    const wrapper = document.createElement('div');
+
+    // Subnav
+    const subnav = document.createElement('div');
+    subnav.classList.add('loja-subnav');
+
+    const btnRecomendacoes = document.createElement('button');
+    btnRecomendacoes.textContent = 'Recomendações';
+    btnRecomendacoes.classList.add('loja-subnav-btn');
+    btnRecomendacoes.addEventListener('click', () => mostrarRecomendacoes(conteudoLoja));
+
+    const btnCategorias = document.createElement('button');
+    btnCategorias.textContent = 'Categorias';
+    btnCategorias.classList.add('loja-subnav-btn');
+    btnCategorias.addEventListener('click', () => mostrarCategorias(conteudoLoja));
+
+    // Busca
+    const searchWrap = document.createElement('div');
+    searchWrap.classList.add('loja-search');
+
+    const input = document.createElement('input');
+    input.setAttribute('type', 'text');
+    input.setAttribute('placeholder', 'Buscar na loja');
+
+    input.addEventListener('input', () => {
+        filtrarPorBusca(input.value, conteudoLoja);
+    });
+
+    searchWrap.appendChild(input);
+    subnav.appendChild(btnRecomendacoes);
+    subnav.appendChild(btnCategorias);
+    subnav.appendChild(searchWrap);
+
+    // Área de conteúdo da loja (abaixo do subnav)
+    const conteudoLoja = document.createElement('div');
+    conteudoLoja.classList.add('loja-conteudo');
+    mostrarTodosJogos(conteudoLoja);
+
+    wrapper.appendChild(subnav);
+    wrapper.appendChild(conteudoLoja);
+
+    return wrapper;
+}
+
+// IDs dos jogos recomendados — troque pelos que quiser
+const IDS_RECOMENDADOS = [730, 570, 620, 1145360, 413150];
+
+const mostrarRecomendacoes = (container) => {
+    container.innerHTML = '';
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Recomendados para você';
+    h2.classList.add('loja-titulo');
+    container.appendChild(h2);
+
+    const grid = document.createElement('div');
+    grid.classList.add('game-grid');
+
+    IDS_RECOMENDADOS.forEach(id => {
+        const jogo = dadosLoja.find(j => j.appid === id);
+        if (jogo) grid.appendChild(criaCardLoja(jogo));
+    });
+
+    container.appendChild(grid);
+}
+
+const mostrarCategorias = (container) => {
+    container.innerHTML = '';
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Categorias';
+    h2.classList.add('loja-titulo');
+    container.appendChild(h2);
+
+    const generos = [...new Set(dadosLoja.map(j => j.genero))].sort();
+
+    const gridCategorias = document.createElement('div');
+    gridCategorias.classList.add('categorias-grid');
+
+    generos.forEach(genero => {
+        const quantidade = dadosLoja.filter(j => j.genero === genero).length;
+
+        const btn = document.createElement('div');
+        btn.classList.add('categoria-card');
+        btn.innerHTML = `
+            <span class="categoria-nome">${genero}</span>
+            <span class="categoria-qtd">${quantidade} jogos</span>
+        `;
+        btn.addEventListener('click', () => mostrarJogosDaCategoria(container, genero));
+        gridCategorias.appendChild(btn);
+    });
+
+    container.appendChild(gridCategorias);
+}
+
+const mostrarJogosDaCategoria = (container, genero) => {
+    container.innerHTML = '';
+
+    // Botão voltar
+    const btnVoltar = document.createElement('button');
+    btnVoltar.textContent = '← Voltar às Categorias';
+    btnVoltar.classList.add('loja-subnav-btn');
+    btnVoltar.style.marginBottom = '20px';
+    btnVoltar.addEventListener('click', () => mostrarCategorias(container));
+    container.appendChild(btnVoltar);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = genero;
+    h2.classList.add('loja-titulo');
+    container.appendChild(h2);
+
+    const grid = document.createElement('div');
+    grid.classList.add('game-grid');
+
+    dadosLoja
+        .filter(j => j.genero === genero)
+        .forEach(jogo => grid.appendChild(criaCardLoja(jogo)));
+
+    container.appendChild(grid);
+}
+
+const mostrarTodosJogos = (container) => {
+    container.innerHTML = '';
+
+    const grid = document.createElement('div');
+    grid.classList.add('game-grid');
+
+    dadosLoja.forEach(jogo => grid.appendChild(criaCardLoja(jogo)));
+
+    container.appendChild(grid);
+}
+
+const filtrarPorBusca = (query, container) => {
+    const q = query.toLowerCase().trim();
+
+    if (!q) {
+        mostrarTodosJogos(container);
+        return;
+    }
+
+    container.innerHTML = '';
+
+    const h2 = document.createElement('h2');
+    h2.textContent = `Resultados para "${query}"`;
+    h2.classList.add('loja-titulo');
+    container.appendChild(h2);
+
+    const grid = document.createElement('div');
+    grid.classList.add('game-grid');
+
+    const resultados = dadosLoja.filter(j =>
+        j.titulo.toLowerCase().includes(q) || j.genero.toLowerCase().includes(q)
+    );
+
+    if (resultados.length === 0) {
+        const p = document.createElement('p');
+        p.textContent = 'Nenhum jogo encontrado.';
+        p.style.color = '#c7d5e0';
+        container.appendChild(p);
+        return;
+    }
+
+    resultados.forEach(jogo => grid.appendChild(criaCardLoja(jogo)));
+    container.appendChild(grid);
+}
+
+const criaCardLoja = (jogo) => {
+    const card = document.createElement('div');
+    card.classList.add('game-card');
+    card.style.cursor = 'pointer';
+
+    card.addEventListener('click', () => {
+        history.pushState({}, '', `/Jogos/${jogo.appid}`);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+    });
+
+    const imagem = document.createElement('div');
+    imagem.classList.add('game-img');
+    const img = document.createElement('img');
+    img.setAttribute('src', jogo.url_imagem);
+    img.setAttribute('alt', jogo.titulo);
+    imagem.appendChild(img);
+
+    const body = document.createElement('div');
+    body.classList.add('game-card-body');
+
+    const titulo = document.createElement('h3');
+    titulo.textContent = jogo.titulo;
+
+    const genero = document.createElement('p');
+    genero.classList.add('game-card-genero');
+    genero.textContent = jogo.genero;
+
+    const precoWrap = document.createElement('div');
+    precoWrap.classList.add('game-card-preco-wrap');
+
+    if (jogo.desconto > 0) {
+        const desconto = document.createElement('span');
+        desconto.classList.add('loja-desconto');
+        desconto.textContent = `-${jogo.desconto}%`;
+        precoWrap.appendChild(desconto);
+    }
+
+    const preco = document.createElement('span');
+    preco.classList.add('game-card-preco');
+    if (jogo.valor_mercado === 0) {
+        preco.textContent = 'Gratuito';
+        preco.classList.add('gratuito');
+    } else {
+        preco.textContent = `R$${jogo.valor_mercado.toFixed(2)}`;
+    }
+    precoWrap.appendChild(preco);
+
+    body.appendChild(titulo);
+    body.appendChild(genero);
+    body.appendChild(precoWrap);
+
+    card.appendChild(imagem);
+    card.appendChild(body);
+
+    return card;
+}
 
 const criaHeader = () => {
     const header = document.createElement('header');
@@ -177,32 +395,34 @@ const criaFooter = () => {
     return footer;
 }
 
-const main = () => {
+const main = async () => {
+    const resposta = await fetch('./Componentes/Jogos/jogos.json');
+    dadosLoja = await resposta.json();
+    setDados(dadosLoja);
+
     const linkcss = document.createElement('link');
     linkcss.setAttribute('rel', 'stylesheet');
     linkcss.setAttribute('href', './Componentes/App/app.css');
     document.head.appendChild(linkcss);
 
-    // Adiciona o header no div#header (separado do conteúdo)
     const headerEl = document.getElementById('header');
     headerEl.appendChild(criaHeader());
-
     renderizandoRotas(window.location.pathname);
 }
-
 main();
 
 function renderizandoRotas(path) {
     let partes = path.split("/");
-    const novoPath = "/" + partes[1];
+    let novoPath = "/" + partes[1];
     const id = partes[2] || null;
+    if (novoPath === "/index.html") {
+        novoPath = "/";
+    }
     const pagina = rotas[novoPath];
-
     const root = document.getElementById('root');
-
     if (pagina) {
         root.innerHTML = '';
-        root.appendChild(pagina(id));      // passa o id para a rota
+        root.appendChild(pagina(id));
     } else {
         root.innerHTML = `<h1>404</h1><p>Página não encontrada.</p>`;
     }
