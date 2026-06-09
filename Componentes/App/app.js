@@ -81,6 +81,48 @@ const rotas = {
 
         return root;
     },
+    "/Categoria": (genero) => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
+
+        const btnVoltar = document.createElement('button');
+        btnVoltar.textContent = '← Voltar às Categorias';
+        btnVoltar.classList.add('loja-subnav-btn');
+        btnVoltar.style.marginBottom = '20px';
+        btnVoltar.addEventListener('click', () => navegarPara('/Loja'));
+        root.appendChild(btnVoltar);
+
+        const h2 = document.createElement('h2');
+        h2.textContent = decodeURIComponent(genero);
+        h2.classList.add('loja-titulo');
+        root.appendChild(h2);
+
+        const grid = document.createElement('div');
+        grid.classList.add('game-grid');
+
+        dadosLoja
+            .filter(j => j.genero === decodeURIComponent(genero))
+            .forEach(jogo => grid.appendChild(criaCardLoja(jogo)));
+
+        root.appendChild(grid);
+        return root;
+    },
+    "/recomendados": () => {
+        const root = document.createElement('div');
+        root.style.padding = '60px 10%';
+        const h2 = document.createElement('h2');
+        h2.textContent = 'Recomendados para você';
+        h2.classList.add('loja-titulo');
+        root.appendChild(h2);
+        const grid = document.createElement('div');
+        grid.classList.add('game-grid');
+        IDS_RECOMENDADOS.forEach(id => {
+            const jogo = dadosLoja.find(j => j.appid === id);
+            if (jogo) grid.appendChild(criaCardLoja(jogo));
+        });
+        root.appendChild(grid);
+        return root;
+    },
 };
 // FUNÇÕES PARA CRIAR PAGINA LOJA
 
@@ -94,12 +136,46 @@ const CriarHeaderJogos = () => {
     const btnRecomendacoes = document.createElement('button');
     btnRecomendacoes.textContent = 'Recomendações';
     btnRecomendacoes.classList.add('loja-subnav-btn');
-    btnRecomendacoes.addEventListener('click', () => mostrarRecomendacoes(conteudoLoja));
+    btnRecomendacoes.addEventListener('click', () => navegarPara('/recomendados'));
 
+    // Botão Categorias com dropdown
     const btnCategorias = document.createElement('button');
-    btnCategorias.textContent = 'Categorias';
+    btnCategorias.textContent = 'Categorias ▾';
     btnCategorias.classList.add('loja-subnav-btn');
-    btnCategorias.addEventListener('click', () => mostrarCategorias(conteudoLoja));
+
+    const dropdown = document.createElement('div');
+    dropdown.classList.add('categorias-dropdown');
+    dropdown.style.display = 'none';
+
+    btnCategorias.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const aberto = dropdown.style.display === 'block';
+        dropdown.style.display = aberto ? 'none' : 'block';
+
+        if (!aberto) {
+            dropdown.innerHTML = '';
+            const generos = [...new Set(dadosLoja.map(j => j.genero))].sort();
+            generos.forEach(genero => {
+                const item = document.createElement('div');
+                item.classList.add('categoria-dropdown-item');
+                item.textContent = genero;
+                item.addEventListener('click', () => {
+                    dropdown.style.display = 'none';
+                    navegarPara(`/Categoria/${encodeURIComponent(genero)}`);
+                });
+                dropdown.appendChild(item);
+            });
+        }
+    });
+
+    document.addEventListener('click', () => {
+        dropdown.style.display = 'none';
+    });
+
+    const btnWrapper = document.createElement('div');
+    btnWrapper.style.position = 'relative';
+    btnWrapper.appendChild(btnCategorias);
+    btnWrapper.appendChild(dropdown);
 
     // Busca
     const searchWrap = document.createElement('div');
@@ -115,21 +191,35 @@ const CriarHeaderJogos = () => {
 
     searchWrap.appendChild(input);
     subnav.appendChild(btnRecomendacoes);
-    subnav.appendChild(btnCategorias);
+    subnav.appendChild(btnWrapper);
     subnav.appendChild(searchWrap);
 
-    // Área de conteúdo da loja (abaixo do subnav)
+    // Área de conteúdo da loja
     const conteudoLoja = document.createElement('div');
     conteudoLoja.classList.add('loja-conteudo');
     mostrarTodosJogos(conteudoLoja);
 
+    const jogodoDia = dadosLoja[Math.floor(Math.random() * dadosLoja.length)];
+    const destaque = document.createElement('div');
+    destaque.classList.add('loja-destaque');
+    destaque.innerHTML = `
+        <div class="destaque-img">
+            <img src="${jogodoDia.url_imagem}" alt="${jogodoDia.titulo}">
+        </div>
+        <div class="destaque-info">
+            <h3>${jogodoDia.titulo}</h3>
+            <p>${jogodoDia.descricao}</p>
+        </div>
+    `;
+
     wrapper.appendChild(subnav);
+    wrapper.appendChild(destaque);
     wrapper.appendChild(conteudoLoja);
 
     return wrapper;
 }
 
-// IDs dos jogos recomendados — troque pelos que quiser
+
 const IDS_RECOMENDADOS = [730, 570, 620, 1145360, 413150];
 
 const mostrarRecomendacoes = (container) => {
@@ -173,7 +263,7 @@ const mostrarCategorias = (container) => {
             <span class="categoria-nome">${genero}</span>
             <span class="categoria-qtd">${quantidade} jogos</span>
         `;
-        btn.addEventListener('click', () => mostrarJogosDaCategoria(container, genero));
+        btn.addEventListener('click', () => navegarPara(`/Categoria/${encodeURIComponent(genero)}`));
         gridCategorias.appendChild(btn);
     });
 

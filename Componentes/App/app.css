@@ -258,6 +258,32 @@ nav a:hover {
     margin: 4px 12px;
 }
 
+/* dropdown de categorias */
+.categorias-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1b2838;
+    border: 1px solid #4c6b8a;
+    border-radius: 4px;
+    z-index: 100;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.categoria-dropdown-item {
+    padding: 10px 16px;
+    color: #c7d5e0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.categoria-dropdown-item:hover {
+    background-color: #2a475e;
+    color: #fff;
+}
+
 /* CARDS DA LOJA */
 
 .game-card-body {
@@ -290,6 +316,36 @@ nav a:hover {
 
 .game-card-preco.gratuito {
     color: #4fc3f7;
+}
+
+/* DESTAQUES */
+
+.destaque-img img {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    height: 400px;
+    border-radius: 4px;
+}
+
+.destaque-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.destaque-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.destaque-info p {
+    font-size: 14px;
+    color: #8f98a0;
 }
 
 /* CATEGORIAS */
