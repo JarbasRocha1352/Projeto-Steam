@@ -6,143 +6,399 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #1b2835;
     color: #c7d5e0;
 }
 
 #root {
-        display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
+/* =====================
+   HEADER PRINCIPAL
+   ===================== */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: #171a15;
+    padding: 0 10%;
+    height: 56px;
+    background-color: #171a21;
+    border-bottom: 1px solid #2a475e;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 900;
     color: #66c0f4;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 nav a {
-    margin-left: 20px;
     text-decoration: none;
     color: #c7d5e0;
-    transition: 0.3s;
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.3px;
 }
 
 nav a:hover {
-    color: #66c0f4;
+    background-color: #2a475e;
+    color: #fff;
 }
 
 .btn-nav {
-    background-color: #5c7e10;
-    padding: 8px 15px;
-    border-radius: 4px;
-    color: white;
+    background-color: #4d7a1e !important;
+    color: #d1e87a !important;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
-/* HERO */
+.btn-nav:hover {
+    background-color: #619c27 !important;
+    color: #fff !important;
+}
+
+/* =====================
+   HERO
+   ===================== */
 
 .hero {
     height: 80vh;
-    background: linear-gradient(to right, #1b2838, #0f1c2c);
+    background: linear-gradient(120deg, #0f1c2c 0%, #1b2838 55%, #152840 100%);
     display: flex;
     align-items: center;
     padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(ellipse at right center, rgba(102,192,244,0.06) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 580px;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    color: #fff;
+    letter-spacing: -0.5px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 17px;
+    margin-bottom: 32px;
+    color: #8fa8bf;
+    line-height: 1.6;
 }
 
 .cta {
     background-color: #66c0f4;
     border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    color: #1b2838;
+    padding: 13px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0f1c2c;
     cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s;
+    border-radius: 3px;
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.3px;
 }
 
 .cta:hover {
-    background-color: #417a9b;
+    background-color: #84d1ff;
+    transform: translateY(-1px);
 }
 
-/* GAMES */
+/* =====================
+   SUBNAV LOJA
+   ===================== */
 
-.games {
-    padding: 60px 10%;
-    text-align: center;
+.loja-subnav {
+    background: linear-gradient(to bottom, #1d3040, #192d3e);
+    border-bottom: 1px solid #2a4a63;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 44px;
 }
 
-.games h2 {
-    margin-bottom: 40px;
-    font-size: 32px;
+.loja-subnav-btn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #b8cdd9;
+    padding: 0 14px;
+    height: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    border-bottom: 2px solid transparent;
 }
 
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-}
-
-.game-card {
-    background-color: #2a475e;
-    padding: 15px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.game-card:hover {
-    transform: scale(1.05);
-}
-
-.game-card h3 {
-    font-size: 14px;
-    margin: 8px 0 5px;
+.loja-subnav-btn:hover {
+    background-color: rgba(255,255,255,0.05);
     color: #fff;
+    border-bottom-color: #66c0f4;
 }
 
-.game-card p {
-    font-size: 13px;
-    color: #66c0f4;
+.loja-search {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
-.game-img {
-    background-color: #1b2838;
-    margin-bottom: 10px;
+.loja-search input {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid #3a5a72;
+    outline: none;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: #c7d5e0;
+    width: 210px;
+    border-radius: 3px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.loja-search input:focus {
+    background: rgba(255,255,255,0.1);
+    border-color: #66c0f4;
+}
+
+.loja-search input::placeholder {
+    color: #5a8a9f;
+}
+
+/* =====================
+   CONTEÚDO LOJA
+   ===================== */
+
+.loja-conteudo {
+    padding: 30px 10% 50px;
+}
+
+.loja-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c7d5e0;
+    margin-bottom: 16px;
+    margin-top: 30px;
+    padding-left: 12px;
+    border-left: 3px solid #66c0f4;
+    letter-spacing: 0.3px;
+}
+
+.loja-categoria {
+    margin-bottom: 40px;
+}
+
+/* =====================
+   DESTAQUE DA LOJA
+   ===================== */
+
+.loja-destaque {
+    background: linear-gradient(to right, #0f1c2c, #1a2f44);
+    padding: 30px 10%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #2a475e;
+}
+
+.destaque-img img {
+    width: 460px;
+    height: 215px;
+    object-fit: cover;
     border-radius: 4px;
-    overflow: hidden;
-}
-
-.game-img img {
-    width: 100%;
     display: block;
 }
 
-/* CONTACT */
+.destaque-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.destaque-info h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.destaque-info p {
+    font-size: 14px;
+    color: #8fa8bf;
+    line-height: 1.6;
+    max-height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* =====================
+   CARD DA LOJA (horizontal)
+   ===================== */
+
+.loja-game-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.loja-card {
+    display: flex;
+    align-items: center;
+    background-color: #1e3448;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 70px;
+}
+
+.loja-card:hover {
+    background-color: #2a4d6b;
+}
+
+.loja-card-img {
+    width: 120px;
+    height: 70px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.loja-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.loja-card:hover .loja-card-img img {
+    transform: scale(1.06);
+}
+
+.loja-card-info {
+    flex: 1;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.loja-card-titulo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #c7d5e0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loja-card-genero {
+    font-size: 11px;
+    color: #5a8a9f;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.loja-card-preco-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 18px;
+    flex-shrink: 0;
+    gap: 4px;
+}
+
+.loja-card-desconto {
+    background-color: #4c6b22;
+    color: #a4d007;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+.loja-card-preco {
+    font-size: 14px;
+    font-weight: bold;
+    color: #acdbf5;
+    white-space: nowrap;
+}
+
+.loja-card-preco.gratuito {
+    color: #4fc3f7;
+}
+
+/* =====================
+   DROPDOWN CATEGORIAS
+   ===================== */
+
+.categorias-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a3040;
+    border: 1px solid #3a5a72;
+    border-radius: 4px;
+    z-index: 100;
+    min-width: 200px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.categoria-dropdown-item {
+    padding: 9px 16px;
+    color: #b8cdd9;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.15s;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.categoria-dropdown-item:hover {
+    background-color: #2a475e;
+    color: #fff;
+}
+
+/* =====================
+   CONTATO
+   ===================== */
 
 .contact {
     padding: 60px 10%;
@@ -151,41 +407,67 @@ nav a:hover {
 }
 
 .contact h2 {
+    font-size: 20px;
+    color: #c7d5e0;
+    max-width: 600px;
+    margin-inline: auto;
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 form {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
 form input {
-    padding: 10px;
-    width: 250px;
-    border: none;
-    border-radius: 4px;
+    padding: 10px 14px;
+    width: 240px;
+    border: 1px solid #2a475e;
+    border-radius: 3px;
+    background: #1b2838;
+    color: #c7d5e0;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input:focus {
+    border-color: #66c0f4;
+}
+
+form input::placeholder {
+    color: #5a7a8a;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #5c7e10;
+    padding: 10px 22px;
+    background-color: #4d7a1e;
     border: none;
-    border-radius: 4px;
-    color: white;
+    border-radius: 3px;
+    color: #d1e87a;
+    font-weight: bold;
+    font-size: 14px;
     cursor: pointer;
+    transition: background 0.2s;
 }
 
 form button:hover {
-    background-color: #7aa32d;
+    background-color: #619c27;
 }
 
-/* FOOTER */
+/* =====================
+   FOOTER
+   ===================== */
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 22px;
     background-color: #0f1c2c;
-    font-size: 14px;
+    font-size: 12px;
+    color: #4a6a7a;
+    border-top: 1px solid #1a2f40;
+    letter-spacing: 0.3px;
 }
