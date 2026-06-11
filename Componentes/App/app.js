@@ -71,14 +71,8 @@ const rotas = {
         const p = document.createElement('p');
         p.textContent = 'Para instalar o Steam, siga os passos abaixo:';
 
-        const a = document.createElement('a');
-        a.textContent = 'Bem-vindo(a) ao Steam';
-        a.setAttribute('href', 'https://store.steampowered.com/about/');
-        a.setAttribute('target', '_blank');
-
         root.appendChild(h1);
         root.appendChild(p);
-        root.appendChild(a);
 
         return root;
     },
