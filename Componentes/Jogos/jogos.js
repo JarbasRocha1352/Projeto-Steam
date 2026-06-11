@@ -59,12 +59,29 @@ const criaCard = (jogo) => {
     return card;
 }
 
-export const CriaCardAleatorio = (vetorJogos) => {
-    const aleatorio = Math.floor(Math.random() * vetorJogos.length);
-    return criaCard(vetorJogos[aleatorio]);
+export const CriaCardAleatorio = (vetorJogos, tamanho) => {
+    const vetinseridos = [];
+    for (let i = 0; i < tamanho; i++) {
+        const aleatorio = Math.floor(Math.random() * vetorJogos.length);
+        if(!vetinseridos.includes(aleatorio)) {
+            vetinseridos.push(aleatorio);
+        } else {
+            i--;
+        }
+    }
+    return vetinseridos.map(indice => criaCard(vetorJogos[indice]));
+    //return criaCard(vetorJogos[vetinseridos]);
 }
 
 export const criaSecaoJogos = () => {
+    // Garante que o CSS está carregado mesmo sem passar por criaJogo()
+    if (!document.querySelector('link[href="/Componentes/Jogos/jogos.css"]')) {
+        const css = document.createElement('link');
+        css.setAttribute('rel', 'stylesheet');
+        css.setAttribute('href', '/Componentes/Jogos/jogos.css');
+        document.head.appendChild(css);
+    }
+
     const secao = document.createElement('section');
     secao.classList.add('games');
 
@@ -78,9 +95,11 @@ export const criaSecaoJogos = () => {
     secao.appendChild(h2);
     secao.appendChild(div);
 
-    for (let i = 0; i < 10; i++) {
-        div.appendChild(CriaCardAleatorio(dados));
-    }
+   const aleatorios = CriaCardAleatorio(dados, 10);
+
+   for (let i = 0; i < aleatorios.length; i++) {
+    div.appendChild(aleatorios[i]);
+   }
 
     return secao;
 }

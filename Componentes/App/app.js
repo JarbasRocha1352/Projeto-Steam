@@ -23,7 +23,8 @@ const rotas = {
     },
     "/Loja": () => {
         const root = document.createElement('div');
-        root.appendChild(CriarHeaderJogos());
+        root.appendChild(criarSubnavLoja());
+        root.appendChild(criarMainLoja());
         return root;
     },
     "/Comunidade": () => {
@@ -98,7 +99,7 @@ const rotas = {
         root.appendChild(h2);
 
         const grid = document.createElement('div');
-        grid.classList.add('game-grid');
+        grid.classList.add('loja-game-grid');
 
         dadosLoja
             .filter(j => j.genero === decodeURIComponent(genero))
@@ -115,7 +116,7 @@ const rotas = {
         h2.classList.add('loja-titulo');
         root.appendChild(h2);
         const grid = document.createElement('div');
-        grid.classList.add('game-grid');
+        grid.classList.add('loja-game-grid');
         IDS_RECOMENDADOS.forEach(id => {
             const jogo = dadosLoja.find(j => j.appid === id);
             if (jogo) grid.appendChild(criaCardLoja(jogo));
@@ -126,10 +127,8 @@ const rotas = {
 };
 // FUNÇÕES PARA CRIAR PAGINA LOJA
 
-const CriarHeaderJogos = () => {
-    const wrapper = document.createElement('div');
-
-    // Subnav
+// Header exclusivo da página Loja: subnav com busca, recomendações e categorias
+const criarSubnavLoja = () => {
     const subnav = document.createElement('div');
     subnav.classList.add('loja-subnav');
 
@@ -177,7 +176,7 @@ const CriarHeaderJogos = () => {
     btnWrapper.appendChild(btnCategorias);
     btnWrapper.appendChild(dropdown);
 
-    // Busca
+    // Busca — referencia o conteúdo pelo ID para não depender de escopo compartilhado
     const searchWrap = document.createElement('div');
     searchWrap.classList.add('loja-search');
 
@@ -186,7 +185,8 @@ const CriarHeaderJogos = () => {
     input.setAttribute('placeholder', 'Buscar na loja');
 
     input.addEventListener('input', () => {
-        filtrarPorBusca(input.value, conteudoLoja);
+        const conteudoLoja = document.querySelector('.loja-conteudo');
+        if (conteudoLoja) filtrarPorBusca(input.value, conteudoLoja);
     });
 
     searchWrap.appendChild(input);
@@ -194,10 +194,12 @@ const CriarHeaderJogos = () => {
     subnav.appendChild(btnWrapper);
     subnav.appendChild(searchWrap);
 
-    // Área de conteúdo da loja
-    const conteudoLoja = document.createElement('div');
-    conteudoLoja.classList.add('loja-conteudo');
-    mostrarTodosJogos(conteudoLoja);
+    return subnav;
+}
+
+// Conteúdo principal da página Loja: destaque do dia + grid de jogos
+const criarMainLoja = () => {
+    const main = document.createElement('div');
 
     const jogodoDia = dadosLoja[Math.floor(Math.random() * dadosLoja.length)];
     const destaque = document.createElement('div');
@@ -212,11 +214,14 @@ const CriarHeaderJogos = () => {
         </div>
     `;
 
-    wrapper.appendChild(subnav);
-    wrapper.appendChild(destaque);
-    wrapper.appendChild(conteudoLoja);
+    const conteudoLoja = document.createElement('div');
+    conteudoLoja.classList.add('loja-conteudo');
+    mostrarTodosJogos(conteudoLoja);
 
-    return wrapper;
+    main.appendChild(destaque);
+    main.appendChild(conteudoLoja);
+
+    return main;
 }
 
 
@@ -231,7 +236,7 @@ const mostrarRecomendacoes = (container) => {
     container.appendChild(h2);
 
     const grid = document.createElement('div');
-    grid.classList.add('game-grid');
+    grid.classList.add('loja-game-grid');
 
     IDS_RECOMENDADOS.forEach(id => {
         const jogo = dadosLoja.find(j => j.appid === id);
@@ -287,7 +292,7 @@ const mostrarJogosDaCategoria = (container, genero) => {
     container.appendChild(h2);
 
     const grid = document.createElement('div');
-    grid.classList.add('game-grid');
+    grid.classList.add('loja-game-grid');
 
     dadosLoja
         .filter(j => j.genero === genero)
@@ -300,7 +305,7 @@ const mostrarTodosJogos = (container) => {
     container.innerHTML = '';
 
     const grid = document.createElement('div');
-    grid.classList.add('game-grid');
+    grid.classList.add('loja-game-grid');
 
     dadosLoja.forEach(jogo => grid.appendChild(criaCardLoja(jogo)));
 
@@ -323,7 +328,7 @@ const filtrarPorBusca = (query, container) => {
     container.appendChild(h2);
 
     const grid = document.createElement('div');
-    grid.classList.add('game-grid');
+    grid.classList.add('loja-game-grid');
 
     const resultados = dadosLoja.filter(j =>
         j.titulo.toLowerCase().includes(q) || j.genero.toLowerCase().includes(q)
@@ -343,57 +348,60 @@ const filtrarPorBusca = (query, container) => {
 
 const criaCardLoja = (jogo) => {
     const card = document.createElement('div');
-    card.classList.add('game-card');
-    card.style.cursor = 'pointer';
+    card.classList.add('loja-card');
 
     card.addEventListener('click', () => {
         history.pushState({}, '', `/Jogos/${jogo.appid}`);
         window.dispatchEvent(new PopStateEvent('popstate'));
     });
 
-    const imagem = document.createElement('div');
-    imagem.classList.add('game-img');
+    // Imagem
+    const imgWrap = document.createElement('div');
+    imgWrap.classList.add('loja-card-img');
     const img = document.createElement('img');
     img.setAttribute('src', jogo.url_imagem);
     img.setAttribute('alt', jogo.titulo);
-    imagem.appendChild(img);
+    imgWrap.appendChild(img);
 
-    const body = document.createElement('div');
-    body.classList.add('game-card-body');
+    // Info central
+    const info = document.createElement('div');
+    info.classList.add('loja-card-info');
 
-    const titulo = document.createElement('h3');
+    const titulo = document.createElement('div');
+    titulo.classList.add('loja-card-titulo');
     titulo.textContent = jogo.titulo;
 
-    const genero = document.createElement('p');
-    genero.classList.add('game-card-genero');
+    const genero = document.createElement('div');
+    genero.classList.add('loja-card-genero');
     genero.textContent = jogo.genero;
 
-    const precoWrap = document.createElement('div');
-    precoWrap.classList.add('game-card-preco-wrap');
+    info.appendChild(titulo);
+    info.appendChild(genero);
+
+    // Área de preço (direita)
+    const precoArea = document.createElement('div');
+    precoArea.classList.add('loja-card-preco-area');
 
     if (jogo.desconto > 0) {
         const desconto = document.createElement('span');
-        desconto.classList.add('loja-desconto');
+        desconto.classList.add('loja-card-desconto');
         desconto.textContent = `-${jogo.desconto}%`;
-        precoWrap.appendChild(desconto);
+        precoArea.appendChild(desconto);
     }
 
     const preco = document.createElement('span');
-    preco.classList.add('game-card-preco');
+    preco.classList.add('loja-card-preco');
     if (jogo.valor_mercado === 0) {
         preco.textContent = 'Gratuito';
         preco.classList.add('gratuito');
     } else {
         preco.textContent = `R$${jogo.valor_mercado.toFixed(2)}`;
     }
-    precoWrap.appendChild(preco);
+    precoArea.appendChild(preco);
 
-    body.appendChild(titulo);
-    body.appendChild(genero);
-    body.appendChild(precoWrap);
-
-    card.appendChild(imagem);
-    card.appendChild(body);
+    card.appendChild(imgWrap);
+    card.appendChild(info);
+    card.appendChild(precoArea);
 
     return card;
 }
